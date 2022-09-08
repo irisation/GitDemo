@@ -7,13 +7,10 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 public class Test {
 
-	@Test
-	public void test() throws InterruptedException {
+	public static void main(String [] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\selenium\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -23,7 +20,6 @@ public class Test {
 		Thread.sleep(5000);
 		page.inputKeys("sdgdgdgdf");
 		driver.close();
-
 	}
 	
 
