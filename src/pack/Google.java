@@ -12,7 +12,7 @@ public class Google {
 	WebElement input;
 	public Google(WebDriver driver) {
 		this.driver = driver;
-		input = driver.findElement(By.name("q"));
+		input = driver.findElement(By.name("quest"));
 	}
 	public void inputKeys(String q) {
 		input.sendKeys(q);
